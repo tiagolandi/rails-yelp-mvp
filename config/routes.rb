@@ -5,5 +5,12 @@ Rails.application.routes.draw do
 
   resources :restaurants, only: [:index, :show, :new, :create] do
     resources :reviews, only: [:new, :create]
+    collection do
+      get :french
+      get :italian
+      get :chinese
+      get :japanese
+      get :belgian
+    end
   end
 end

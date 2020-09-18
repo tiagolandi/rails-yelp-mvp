@@ -1,6 +1,14 @@
 <div class="container">
   <h1>Restaurants</h1>
-
+  <p>Pick by cuisine</p>
+  <p>  <%= link_to 'French only', french_restaurants_path, class: "btn btn-outline-primary" %>
+  <%= link_to 'Italian only', italian_restaurants_path, class: "btn btn-outline-danger" %>
+  <%= link_to 'Chinese only', chinese_restaurants_path, class: "btn btn-outline-warning" %>
+  <%= link_to 'Japanese only', japanese_restaurants_path, class: "btn btn-outline-secondary" %>
+  <%= link_to 'Belgian only', belgian_restaurants_path, class: "btn btn-outline-info" %>
+  </p>
+  <hr>
+  <p>  <%= link_to 'New Restaurant', new_restaurant_path, class: "btn btn-outline-dark "%></p>
   <table class='table table-bordered table-hover'>
     <thead class="thead-light">
       <tr>
@@ -24,7 +32,5 @@
       <% end %>
     </tbody>
   </table>
-
-  <br>
-  <%= link_to 'New Restaurant', new_restaurant_path, class: "btn btn-outline-dark btn-lg"%>
+    <p>  <%= link_to 'New Restaurant', new_restaurant_path, class: "btn btn-outline-dark btn-lg"%></p>
 </div>

@@ -27,6 +27,22 @@ class RestaurantsController < ApplicationController
     end
   end
 
+  def french
+    @restaurants = Restaurant.where(category: "french")
+  end
+  def italian
+    @restaurants = Restaurant.where(category: "italian")
+  end
+  def chinese
+    @restaurants = Restaurant.where(category: "chinese")
+  end
+  def japanese
+    @restaurants = Restaurant.where(category: "japanese")
+  end
+  def belgian
+    @restaurants = Restaurant.where(category: "belgian")
+  end
+
   private
 
   # Use callbacks to share common setup or constraints between actions.
